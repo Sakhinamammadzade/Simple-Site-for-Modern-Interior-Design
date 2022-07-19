@@ -1,0 +1,68 @@
+@import "_variable.scss";
+
+@mixin border-radius-15{
+    border-top-left-radius: 15mm;
+    border-bottom-right-radius: 15mm;
+}
+@mixin border-radius-3{
+    border-top-left-radius: 3mm;
+    border-bottom-right-radius: 3mm;
+}
+@mixin border-radius-5{
+    border-top-left-radius: 5mm;
+    border-bottom-right-radius: 5mm;
+}
+@mixin services-box{
+    width: 350px;
+    height: 200px;
+    border-top-left-radius: 15mm;
+    border-bottom-right-radius: 15mm;
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+    margin-left: 15px;
+}
+@mixin statics-box{
+    width: 120px;
+    height: 150px;
+    border-top-left-radius: 5mm;
+    border-bottom-right-radius: 5mm;
+    border: 1px solid;
+
+}
+
+@mixin client-comment{
+    width: 480px;
+    height: 160px;
+    padding: 15px 35px;
+    border-top-left-radius: 12mm;
+    border-bottom-right-radius: 12mm;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   
+}
+
+@mixin title{
+    text-align: center;
+    h6{
+        color: var(--little-title);
+        font-size: 15px;
+        font-weight: 600;
+    }
+    h1{
+        font-size: 35px;
+    }
+}
+
+@mixin link{
+    margin-top: 50px;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        background-color: var(--link-color);
+        padding: 8px 28px;
+        text-transform: uppercase;
+        font-size: 15px;
+        @include border-radius-5
+    }
+}
